@@ -1,0 +1,36 @@
+.post-card {
+    background-color: rgba(25, 33, 46, 0.85);
+    padding: 30px;
+    border: 2px solid #39FF14; 
+    border-radius: 0; 
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); 
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.post-card:hover {
+    transform: translateY(-5px); 
+    border-color: #00FFFF; 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.post-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #00FFFF;
+    border-left: 2px solid #00FFFF;
+}
+.post-card::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #00FFFF;
+    border-right: 2px solid #00FFFF;
+}

@@ -1,0 +1,27 @@
+.matrix-background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: #111827;
+    overflow: hidden;
+}
+
+.matrix-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.matrix-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 增加一層深黑遮罩，降低矩陣雨的亮度 */
+    background-color: rgba(0, 0, 0, 0.5); /* 50% 透明度 */
+    pointer-events: none; 
+}

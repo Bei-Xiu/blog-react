@@ -1,0 +1,26 @@
+.homepage-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 文章佔 75%，側欄佔 25% */
+    gap: 40px; /* 欄位間距 */
+    /* width: 100%; */
+    margin: 40px auto; /* 置中 */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px; 
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .homepage-layout {
+        /* 堆疊成單欄 */
+        grid-template-columns: 1fr; 
+    }
+    .sidebar-area {
+        /* 側欄在手機上佔滿寬度 */
+        width: 100%;
+        margin-top: 40px;
+    }
+}
