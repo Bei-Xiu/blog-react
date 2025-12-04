@@ -17,7 +17,7 @@ function App() {
       <div className="content-container"> 
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
-            <Route path="/" element={<HomePage postsPromise={postsPromise} />} />
+            <Route path="/blog-react" element={<HomePage postsPromise={postsPromise} />} />
             <Route path="/post/:postId" element={<FullPost postsPromise={postsPromise} />} />
           </Routes>
         </Suspense>
