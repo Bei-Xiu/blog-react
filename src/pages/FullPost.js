@@ -12,14 +12,14 @@ const FullPost = ({ postsPromise }) => {
     return (
       <div className="error-404">
         <h2>文章不存在...</h2>
-        <Link to="/" className="back-button">返回首頁</Link>
+        <Link to="/blog-react" className="back-button">返回首頁</Link>
       </div>
     );
   }
 
   return (
     <div className="full-post-container">
-      <Link to="/" className="back-button">← 返回首頁</Link>
+      <Link to="/blog-react" className="back-button">← 返回首頁</Link>
       <h1>{post.title}</h1>
       <p className="post-date">發布於：{post.date}</p>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }}></div>
