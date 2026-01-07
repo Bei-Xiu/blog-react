@@ -14,6 +14,38 @@ h1, h3 {
     margin-bottom: 25px;
 }
 
+.code-block {
+    background-color:#000;
+    padding:6px;
+    white-space: pre-wrap;      /* 允許換行 */
+    word-break: break-all;      /* 必要時強制斷字 */
+    /* overflow-x: auto; */
+}
+
+.remark{
+    color: #1E6C0C;
+}
+
+.highlight{
+    color: #00FFFF;
+}
+
+.flex-container {
+  /* 啟用 Flexbox 佈局 */
+  display: flex; 
+  /* 沿主軸（水平方向）置中內容 */
+  justify-content: center; 
+  /* 如果您也想垂直置中，可以加上：align-items: center; */
+}
+
+.img-block{
+    border: 1px solid #00FFFF;
+    width: 100%;
+    height: auto;
+    /* 確保圖片不會被放大超過其原始解析度 */
+    max-width: 100%;
+}
+
 /* .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

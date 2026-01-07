@@ -1,27 +1,41 @@
+/*Matrix 背景最外層容器*/
 .matrix-background-wrapper {
+    /*固定在視窗上，不隨頁面滾動*/
     position: fixed;
+    /*從視窗左上角開始定位*/
     top: 0;
     left: 0;
+    /*寬高填滿整個瀏覽器視窗*/
     width: 100%;
     height: 100%;
+    /*放在最底層，確保內容顯示在上方*/
     z-index: -10;
+    /*Matrix 背景底色*/
     background-color: #111827;
+    /*避免 Canvas 超出容器造成捲軸*/
     overflow: hidden;
 }
 
+/*Canvas 元素本身*/
 .matrix-canvas {
+    /*避免 Canvas 產生預設 inline 空隙*/
     display: block;
+    /*Canvas 寬高與容器同步*/
     width: 100%;
     height: 100%;
 }
 
+/*Matrix 上方的半透明遮罩*/
 .matrix-overlay {
+    /*絕對定位，覆蓋整個畫面*/
     position: absolute;
     top: 0;
     left: 0;
+    /*與容器等寬等高*/
     width: 100%;
     height: 100%;
-    /* 增加一層深黑遮罩，降低矩陣雨的亮度 */
-    background-color: rgba(0, 0, 0, 0.5); /* 50% 透明度 */
-    pointer-events: none; 
+    /*黑色半透明遮罩，降低矩陣雨亮度*/
+    background-color: rgba(0, 0, 0, 0.5);
+    /*不阻擋滑鼠與觸控事件*/
+    pointer-events: none;
 }
